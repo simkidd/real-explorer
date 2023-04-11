@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import House from "../assets/bernard-hermant-KqOLr8OiQLU-unsplash.png";
+import HouseBg from "../assets/bernard-hermant-KqOLr8OiQLU-unsplash.png";
 import ServiceCard from "../components/cards/ServiceCard";
 import { ServiceCardData } from "../data/serviceCardData";
 import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         <div className="hero-right">
           <div className="img-wrapper">
-            <img src={House} alt="" />
+            <img src={HouseBg} alt="" />
           </div>
         </div>
       </div>
