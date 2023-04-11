@@ -50,7 +50,7 @@ const Home = () => {
       {/* advantages section */}
       <section className="advantages">
         <div className="outer-container">
-          <SmallTitle title={"advantages"} className="small-title" />
+          <SmallTitle title="advantages" className="small-title" />
           <p className="sub-title">Why Real explorer is better</p>
           <div className="inner-container">
             <div className="inner-left">
