@@ -160,30 +160,16 @@
                 max-width: fit-content;
             }
         }
-        .swiper {
-            width: 100%;
+        .service-card-wrapper{
+            box-sizing: border-box;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
             padding-left: 150px;
-            padding-top: 20px;
-            padding-bottom: 120px;
-            @media screen and (max-width: 768px) {
-                padding-left: 20px;
-            }
-
-            .swiper-slide {
-                max-width: 275px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 30px;
-                @media screen and (max-width: 768px) {
-                    max-width: fit-content;
-                }
-                &:hover {
-                    background: #ffffff;
-                    box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.04);
-                    border-radius: 10px;
-                }
-            }
+            padding-right: 150px;
+            gap: 2rem;
+            // display: flex;
         }
     }
     .advantages {

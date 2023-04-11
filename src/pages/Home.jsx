@@ -1,13 +1,11 @@
 import React from "react";
 import "./home.scss";
 import House from "../assets/bernard-hermant-KqOLr8OiQLU-unsplash.png";
-import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "../components/cards/ServiceCard";
 import { ServiceCardData } from "../data/serviceCardData";
 import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
-import NumberCounter from 'number-counter'
+import NumberCounter from "number-counter";
 
-import "swiper/scss"; // core Swipe
 import SmallTitle from "../components/SmallTitle";
 
 const Home = () => {
@@ -42,20 +40,11 @@ const Home = () => {
           We have the most listings and constant updates. So you’ll never miss
           out.
         </p>
-
-        <Swiper 
-        slidesPerView={3} 
-        spaceBetween={30}
-        
-        >
+        <div className="service-card-wrapper">
           {ServiceCardData.map((card, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <ServiceCard card={card} />
-              </SwiperSlide>
-            );
+            return <ServiceCard key={i} card={card} />;
           })}
-        </Swiper>
+        </div>
       </section>
       {/* advantages section */}
       <section className="advantages">
@@ -67,16 +56,20 @@ const Home = () => {
               <p>Traditional home sale</p>
               <ul>
                 <li>
-                  Risk of buyer financing fall-through <AiOutlineClose style={{marginLeft: 14}} />{" "}
+                  Risk of buyer financing fall-through{" "}
+                  <AiOutlineClose style={{ marginLeft: 14 }} />{" "}
                 </li>
                 <li>
-                  Hours of prep work and home showings <AiOutlineClose style={{marginLeft: 14}} />{" "}
+                  Hours of prep work and home showings{" "}
+                  <AiOutlineClose style={{ marginLeft: 14 }} />{" "}
                 </li>
                 <li>
-                  Manage repairs yourself <AiOutlineClose style={{marginLeft: 14}} />{" "}
+                  Manage repairs yourself{" "}
+                  <AiOutlineClose style={{ marginLeft: 14 }} />{" "}
                 </li>
                 <li>
-                  Uncertain closing timeline <AiOutlineClose style={{marginLeft: 14}} />{" "}
+                  Uncertain closing timeline{" "}
+                  <AiOutlineClose style={{ marginLeft: 14 }} />{" "}
                 </li>
               </ul>
             </div>
@@ -86,22 +79,28 @@ const Home = () => {
               </p>
               <ul>
                 <li>
-                  <AiOutlineCheck style={{marginRight: 14}} /> Competitive cash offer in 24 hours
+                  <AiOutlineCheck style={{ marginRight: 14 }} /> Competitive
+                  cash offer in 24 hours
                 </li>
                 <li>
-                  <AiOutlineCheck style={{marginRight: 14}} /> No listing, prep work, or showings
+                  <AiOutlineCheck style={{ marginRight: 14 }} /> No listing,
+                  prep work, or showings
                 </li>
                 <li>
-                  <AiOutlineCheck style={{marginRight: 14}} /> Skip the repair work and deduct the costs
+                  <AiOutlineCheck style={{ marginRight: 14 }} /> Skip the repair
+                  work and deduct the costs
                 </li>
                 <li>
-                  <AiOutlineCheck style={{marginRight: 14}} /> Choose any close date from 10-60 days
+                  <AiOutlineCheck style={{ marginRight: 14 }} /> Choose any
+                  close date from 10-60 days
                 </li>
               </ul>
             </div>
           </div>
           <div className="adv-bottom">
-            <span><NumberCounter end={485091} start={482500} postFix='+' /></span>
+            <span>
+              <NumberCounter end={485091} start={482500} postFix="+" />
+            </span>
             <p>Home available</p>
             <p>Every 60 seconds a home owner requests an offer from oval</p>
           </div>
