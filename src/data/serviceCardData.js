@@ -1,7 +1,7 @@
-import Buy from '../assets/Group 25.png'
-import Sell from '../assets/Group 27.png'
-import Rent from '../assets/Group 29.png'
-import Save from '../assets/Group 200.png'
+import Buy from '../assets/Group-25.png'
+import Sell from '../assets/Group-27.png'
+import Rent from '../assets/Group-29.png'
+import Save from '../assets/Group-200.png'
 
 
 export const ServiceCardData = [

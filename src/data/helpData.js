@@ -1,9 +1,9 @@
-import Key from '../assets/Group 27 (1).png'
-import List from '../assets/Group 25 (2).png'
-import Cash from '../assets/Group 27 (2).png'
-import Connect from '../assets/Group 29 (2).png'
-import Home from '../assets/Group 29 (3).png'
-import Glass from '../assets/Group 25 (1).png'
+import Key from '../assets/Group-27-(1).png'
+import List from '../assets/Group-25-(2).png'
+import Cash from '../assets/Group-27-(2).png'
+import Connect from '../assets/Group-29-(2).png'
+import Home from '../assets/Group-29-(3).png'
+import Glass from '../assets/Group-25-(1).png'
 
 export const HelpCardData = [
     {

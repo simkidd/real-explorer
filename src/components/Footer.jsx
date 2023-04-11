@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.scss";
-import AppStore from "../assets/Rectangle 1 + Google Play Icon + Imported Layers + Imported Layers + App Store.png";
-import PlayStore from "../assets/Rectangle 1 + Google Play Icon + Imported Layers + Fill 1.png";
+import AppStore from "../assets/app-store.png";
+import PlayStore from "../assets/playstore.png";
 import Twitter from "../assets/Twitter.png";
 import Facebook from "../assets/Facebook.png";
 import LinkedIn from "../assets/Linkedin.png";

@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import House from "../assets/bernard-hermant-KqOLr8OiQLU-unsplash Copy.png";
+import House from "../assets/bernard-hermant-KqOLr8OiQLU-unsplash.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "../components/cards/ServiceCard";
 import { ServiceCardData } from "../data/serviceCardData";
