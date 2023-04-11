@@ -3,15 +3,24 @@ import "./navbar.scss";
 import Logo from "../assets/Group-28.png";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(()=>{
+    window.addEventListener("scroll", () => {
+      setScrolled(window.scrollY > 30)
+    })
+  })
+
   const handleMenu = () => {
     setShowMenu(!showMenu);
   };
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
           <div className="mobile-nav">
             {/* menu button */}
