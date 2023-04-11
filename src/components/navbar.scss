@@ -1,0 +1,136 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%; /* Center the navbar */
+    transform: translateX(-50%); /* Move the navbar back to center */
+    // background-color: red; /* Set your desired background color */
+    z-index: 100; /* Set a high z-index to ensure the navbar is always on top */
+    width: 80%;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    .navbar-container {
+        height: 100px; /* Set your desired height */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // padding-right: 100px;
+        // padding-left: 100px;
+        border-radius: 30px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        @media screen and (max-width: 768px) {
+            height: 72px;
+            padding-left: 10px;
+        }
+        .mobile-nav {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .menu-btn {
+                display: none;
+                cursor: pointer;
+                padding: 10px;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    margin-right: 3rem;
+                }
+            }
+            .mobile-logo {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                }
+            }
+            .mobile-list-close {
+                display: none;
+            }
+            .mobile-list {
+                left: -120%;
+                transition: all 0.3s ease-in-out;
+
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    list-style: none;
+                    gap: 0;
+                    position: absolute;
+                    top: 0;
+                    left: auto;
+                    background: #fff;
+                    width: 50%;
+                    border-radius: 10px;
+                    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.197);
+                    transition: all 0.3s ease-in-out;
+                    li {
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        a {
+                            color: #64626a;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-family: "Poppins", sans-serif;
+                            line-height: 21px;
+                            &:hover {
+                                color: #348193;
+                            }
+                        }
+                        .register {
+                            background: #348193;
+                            color: #fff;
+                            border-radius: 19px;
+                            width: 93px;
+                            height: 38px;
+                            border: none;
+                            font-family: "Poppins", sans-serif;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+            li {
+                a {
+                    color: #64626a;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: "Poppins", sans-serif;
+                    line-height: 21px;
+                    &:hover {
+                        color: #348193;
+                    }
+                }
+                .register {
+                    background: #348193;
+                    color: #fff;
+                    border-radius: 19px;
+                    width: 93px;
+                    height: 38px;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    cursor: pointer;
+                }
+            }
+        }
+        .logo {
+            // margin-right: 160px;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
