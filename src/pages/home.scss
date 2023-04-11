@@ -162,14 +162,18 @@
         }
         .service-card-wrapper{
             box-sizing: border-box;
-            display: grid;
             align-items: center;
-            justify-content: center;
-            grid-template-columns: repeat(3, 1fr);
+            // justify-content: center;
             padding-left: 150px;
             padding-right: 150px;
             gap: 2rem;
-            // display: flex;
+            display: flex;
+            flex-wrap: wrap;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: repeat(1, 1fr);
+                padding-left: 25px;
+                padding-right: 25px;
+            }
         }
     }
     .advantages {
