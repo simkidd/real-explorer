@@ -46,12 +46,7 @@ const Home = () => {
         <Swiper 
         slidesPerView={3} 
         spaceBetween={30}
-        breakpoints={{
-            768: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            }
-        }}
+        
         >
           {ServiceCardData.map((card, i) => {
             return (
