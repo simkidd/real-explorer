@@ -4,7 +4,7 @@ import HouseBg from "../assets/bernard-hermant-KqOLr8OiQLU-unsplash.png";
 import ServiceCard from "../components/cards/ServiceCard";
 import { ServiceCardData } from "../data/serviceCardData";
 import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
-import NumberCounter from "number-counter";
+// import NumberCounter from "number-counter";
 
 import SmallTitle from "../components/SmallTitle";
 import Search from "../components/Search";
@@ -100,7 +100,7 @@ const Home = () => {
           </div>
           <div className="adv-bottom">
             <span>
-              <NumberCounter end={485091} start={482500} postFix="+" />
+              {/* <NumberCounter end={485091} start={482500} postFix="+" /> */}
             </span>
             <p>Home available</p>
             <p>Every 60 seconds a home owner requests an offer from oval</p>
