@@ -7,6 +7,7 @@ import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
 import NumberCounter from "number-counter";
 
 import SmallTitle from "../components/SmallTitle";
+import Search from "../components/Search";
 
 const Home = () => {
   return (
@@ -106,6 +107,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <Search />
     </div>
   );
 };

@@ -26,7 +26,11 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <div></div>
+            <div className="tab-signup">
+              <Link to="register">
+                <button className="register">Sign Up</button>
+              </Link>
+            </div>
             {/* mobile menu list */}
             <ul className={showMenu ? "mobile-list" : "mobile-list-close"}>
               <FaTimes

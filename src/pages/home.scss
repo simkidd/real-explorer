@@ -15,6 +15,12 @@
             padding-top: 10rem;
             height: 100%;
         }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding-top: 193px;
+            flex-direction: column;
+            height: 100%;
+            gap: 0;
+        }
         .hero-left {
             .text-wrapper {
                 width: 100%;
@@ -109,6 +115,9 @@
         .hero-right {
             position: relative;
             align-self: last baseline;
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                align-self: center;
+            }
             .img-wrapper {
                 width: 100%;
                 max-width: 593px;
@@ -116,6 +125,9 @@
                 display: flex;
                 @media screen and (max-width: 768px) {
                     justify-content: center;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    
                 }
                 img {
                     object-fit: contain;
@@ -140,6 +152,11 @@
                 line-height: 18px;
                 padding-left: 20px;
             }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding-left: 30px;
+                font-size: 14px;
+                line-height: 21px;
+            }
         }
         .sub-title {
             padding-left: 150px;
@@ -159,6 +176,12 @@
                 padding-bottom: 20px;
                 max-width: fit-content;
             }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 32px;
+                line-height: 48px;
+                padding-left: 30px;
+                padding-bottom: 16px;
+            }
         }
         .service-card-wrapper{
             box-sizing: border-box;
@@ -170,9 +193,14 @@
             display: flex;
             flex-wrap: wrap;
             @media screen and (max-width: 768px) {
-                grid-template-columns: repeat(1, 1fr);
                 padding-left: 25px;
                 padding-right: 25px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 30px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
             }
         }
     }

@@ -1,0 +1,81 @@
+.search-hood {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .search-hood-title {
+        margin-right: 63px;
+        @media screen and (max-width: 768px){
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            margin-right: 26px;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: right;
+            color: #3b3a40;
+        }
+    }
+    .search-input {
+        background: #ffffff;
+        border: 1px solid #d1d0d6;
+        border-radius: 18px;
+        height: 68px;
+        width: 555px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        input {
+            width: 100%;
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            border: none;
+            background: transparent;
+            outline: none;
+            @media screen and (max-width: 768px){
+                margin-bottom: 22px;
+            }
+            &::placeholder{
+                color: #8e8c95;
+                @media screen and (max-width: 768px){
+                    text-align: center;
+                }
+            }
+        }
+        button {
+            background: #00d095;
+            border-radius: 24px;
+            width: 130px;
+            height: 48px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            @media screen and (max-width: 768px){
+                width: 100%;
+                height: 40px;
+            }
+        }
+    }
+}
