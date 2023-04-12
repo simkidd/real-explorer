@@ -5,12 +5,14 @@ import ServiceCard from "../components/cards/ServiceCard";
 import { ServiceCardData } from "../data/serviceCardData";
 import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
 // import NumberCounter from "number-counter";
-
 import SmallTitle from "../components/SmallTitle";
 import Search from "../components/Search";
+import Meta from "../components/Meta";
 
 const Home = () => {
   return (
+    <>
+    <Meta title={'Welcome to Real Explorer'}/>
     <div className="home">
       <div className="hero">
         <div className="hero-left">
@@ -110,6 +112,7 @@ const Home = () => {
       
       <Search />
     </div>
+    </>
   );
 };
 

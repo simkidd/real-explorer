@@ -7,6 +7,7 @@ import Circle2 from "../assets/Ellipse-4.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
+import Meta from "../components/Meta";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -25,15 +26,16 @@ const SignUp = () => {
     setShowConfirmPassword(!showConfirmPassword);
   };
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  }
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
   };
 
-  const handleConfirmPasswordChange = (event) => {
-    setConfirmPassword(event.target.value);
-  };
-  
   return (
+    <>
+     <Meta title={'Register an account'} />
     <div className="sign-up">
       <div className="wrapper">
         <div className="left-side">
@@ -151,6 +153,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

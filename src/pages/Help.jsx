@@ -5,6 +5,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { Faqs, HelpCardData } from "../data/helpData";
 import HelpCard from "../components/cards/HelpCard";
 import Search from "../components/Search";
+import Meta from "../components/Meta";
 
 const Help = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -14,6 +15,8 @@ const Help = () => {
   };
 
   return (
+    <>
+    <Meta title={'Help'} />
     <div className="help">
       <section className="help-search-container">
         <div className="inner-wrapper">
@@ -76,6 +79,7 @@ const Help = () => {
 
       <Search />
     </div>
+    </>
   );
 };
 
