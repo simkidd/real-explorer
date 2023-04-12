@@ -1,0 +1,225 @@
+.sign-up {
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 115px;
+    padding-bottom: 172px;
+    .wrapper {
+        background: white;
+        width: 100%;
+        max-width: 979px;
+        height: 634.59px;
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.200181);
+        .left-side {
+            width: 100%;
+            max-width: 509px;
+            padding-top: 35px;
+            padding-bottom: 38px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+
+            .form-container {
+                width: 100%;
+                max-width: 337px;
+                box-sizing: border-box;
+                .form-heading {
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        &:nth-of-type(1) {
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 30px;
+                            letter-spacing: 0.5625px;
+                            color: #535353;
+                            margin-bottom: 12px;
+                        }
+                        &:nth-of-type(2) {
+                            font-family: "Lato", sans-serif;
+                            font-weight: 900;
+                            font-size: 14px;
+                            line-height: 17px;
+                            letter-spacing: 0.3px;
+                            color: #a1a1a1;
+                            margin-bottom: 42.6px;
+                        }
+                    }
+                }
+
+                form {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    .form-group {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        position: relative;
+                        box-sizing: border-box;
+                        label {
+                            font-family: "Lato", sans-serif;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            letter-spacing: 1px;
+                            color: #33333a;
+                            position: absolute;
+                        }
+                        input {
+                            border: none;
+                            outline: none;
+                            width: 100%;
+                            background: transparent;
+                            border-bottom: 1px solid #d4d4d4;
+                            font-size: 14px;
+                            padding: 25px 5px 5px;
+                            box-sizing: border-box;
+                            &:focus-within {
+                                border-color: #4a90e2;
+                            }
+                        }
+
+                        .psw-wrap {
+                            position: relative;
+                            svg {
+                                cursor: pointer;
+                                color: #717172;
+                                position: absolute;
+                                right: 2%;
+                                top: 35%;
+                            }
+                        }
+                    }
+                    .check-group {
+                        display: flex;
+                        align-items: start;
+                        gap: 1rem;
+                        margin-bottom: 22px;
+                        width: 100%;
+                        position: relative;
+                        input{}
+                        label {
+                            font-family: "Lato";
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #424243;
+                            a {
+                                color: #1a1391;
+                            }
+                        }
+                        a{
+                            font-family: "Lato";
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #1a1391;
+                        }
+                    }
+                    .submit-group {
+                        margin-bottom: 10px;
+                        button {
+                            width: 100%;
+                            height: 42px;
+                            background: #1a1391;
+                            border: none;
+                            color: #fff;
+                            cursor: pointer;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                .have-account {
+                    font-family: "Lato", sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #424243;
+                    text-align: center;
+                    a {
+                        color: #1a1391;
+                    }
+                }
+            }
+        }
+        .right-side {
+            background: #1a1391;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 470px;
+            overflow: hidden;
+            .swiper{
+                width: 100%;
+                height: 100%;
+                .swiper-slide{
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;                    width: 100%;
+                    .image-container {
+                        width: 249px;
+                        height: 261px;
+                        border-radius: 8px;
+                        background: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 26px;
+                        .page-img{
+                            object-fit: scale-down;
+        
+                        }
+                    }
+                    p {
+                        font-weight: 400;
+                        font-family: "Roboto", sans-serif;
+                        text-align: center;
+                        width: 368px;
+                        &:nth-of-type(1) {
+                            font-size: 24px;
+                            line-height: 26px;
+                            color: #ffffff;
+                            padding-bottom: 13px;
+                        }
+                        &:nth-of-type(2) {
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #b7a9e3;
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    bottom: 14% !important;
+                }
+                .swiper-pagination-bullet{
+                    background: #7b5dd9;
+                }
+                .swiper-pagination-bullet-active{
+                    background: #fff;
+                }
+            }
+            .circle{
+                position: absolute;
+                &:nth-of-type(1){
+                    top: -21%;
+                    left: -28%;
+                }
+                &:nth-of-type(2){
+                    right: -46%;
+                    bottom: -36%;
+                }
+            }
+        }
+    }
+}

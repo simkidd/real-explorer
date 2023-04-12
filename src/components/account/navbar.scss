@@ -1,0 +1,36 @@
+.login-navbar{
+    width: 100%;
+    .container{
+        padding: 31px 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ECF0F4;
+        
+        .login-navbar-logo{
+            img{}
+        }
+        .login-navbar-links{
+            list-style: none;
+            display: flex;
+            gap: 32px;
+            li{
+                a{
+                    button{
+                        height: 55px;
+                        width: 165px;
+                        background: none;
+                        border: 1px solid #1a1391;
+                        color: #1a1391;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        &.login{
+                            background: #1a1391;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

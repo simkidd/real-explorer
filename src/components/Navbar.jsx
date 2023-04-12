@@ -36,7 +36,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="tab-signup">
-              <Link to="register">
+              <Link to="/register">
                 <button className="register">Sign Up</button>
               </Link>
             </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="register">
+                <Link to="account/register">
                   <button className="register">Sign Up</button>
                 </Link>
               </li>
@@ -121,7 +121,7 @@ const Navbar = () => {
               <Link to="help">Help</Link>
             </li>
             <li>
-              <Link to="register">
+              <Link to="account/register">
                 <button className="register">Sign Up</button>
               </Link>
             </li>
